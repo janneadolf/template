@@ -41,3 +41,4 @@ renv::snapshot()
 
 # update packages
 if (FALSE) renv::update()
+
