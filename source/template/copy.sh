@@ -2,7 +2,7 @@
 set -e
 
 # define vars
-TEMPLATE_REPO="https://github.com/janneadolf/test-template.git"
+TEMPLATE_REPO="https://github.com/janneadolf/template.git"
 NEW_REPO_NAME=${1:-copy-template}
 LOCAL_PATH=${2:-github/$NEW_REPO_NAME}
 #REMOTE_URL=${3:-https://github.com/janneadolf/$NEW_REPO_NAME.git}
@@ -17,7 +17,7 @@ cd "$LOCAL_PATH"
 rm -rf .git
 
 # update local repo copy
-mv test-template.Rproj "$NEW_REPO_NAME.Rproj" # update name R proj
+mv template.Rproj "$NEW_REPO_NAME.Rproj" # update name R proj
 rm -rf source/template # remove template files
 
 # create remote repo (using github-cli)
