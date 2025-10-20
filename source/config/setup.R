@@ -1,20 +1,28 @@
+# create folders
+dirs <- c(
+  "data",
+  "media",
+  "output"
+)
+sapply(dirs, dir.create)
+
 # initialize renv
 renv::init()
-#
+
 # enable the INBO universe
 options(
   repos = c(
     inbo = "https://inbo.r-universe.dev", CRAN = "https://cloud.r-project.org"
   )
 )
-#
+
 # install checklist
 install.packages("checklist")
-#
+
 # set-up project
 checklist::setup_project(".")
-#
-# install packages
+
+# install first packages
 pkgs <- c(
   "tidyverse",
   "cyclocomp",
@@ -27,13 +35,11 @@ if (any(pkgs_installed == FALSE)) {
 }
 # install citr
 if (FALSE) devtools::install_github("crsh/citr") # install citr
-#
-#
+
 # write renv lockfile
 renv::snapshot()
-#
+
 # update packages
 if (FALSE) renv::update()
-#
-# author information can be adapted manually via
-# C:\Users\janne_adolf\AppData\Roaming\R\data\R\checklist
+
+
