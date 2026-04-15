@@ -3,7 +3,7 @@ set -e
 
 # define vars
 TEMPLATE_REPO="https://github.com/janneadolf/template.git"
-NEW_REPO_NAME=${1:-copy-template}
+NEW_REPO_NAME=${1:-new-repo-name}
 LOCAL_PATH=${2:-github/$NEW_REPO_NAME}
 #REMOTE_URL=${3:-https://github.com/janneadolf/$NEW_REPO_NAME.git}
 
