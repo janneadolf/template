@@ -1,0 +1,8 @@
+Package: none
+Title: Title
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Janne", "Adolf", , "janne.adolf@inbo.com", role = c("aut", "cre"), comment = c("0000-0001-6064-9803")),
+    person("Research Institute for Nature and Forest (INBO)", email = "info@inbo.be", role = c("cph")))
+Description: ... is an R project to ...
+Encoding: UTF-8
